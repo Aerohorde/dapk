@@ -1,0 +1,203 @@
+body,html{
+    margin:0 !important;
+    padding:0 !important;
+}
+
+.body_bgr{
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            top: 0;
+            left: 0;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+            background-image: url("http://185.105.224.2:7777/golovan.ru/inc/upload/backgrounds.jpg");
+            opacity: 1;
+            z-index: -1;
+            background-color: rgba(0, 0, 0, 5);
+}
+section,footer{
+    display:block; 
+}
+//main-settings
+#blocks{
+    &
+    .card_middle_padding{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .card_color_dark{
+        background-color: rgba(255, 255, 255, 0.329);
+    }
+    .card_p_btn{
+        position: absolute;
+        bottom: 10px;
+    }
+    .card_btn_color{
+        color: #8fc0d8;
+        border-color: #8fc0d8;
+    }
+    .card_btn_color:hover{
+        background-color: #888a8c6b;
+    }
+    .card_btn_color:focus{
+        box-shadow: none;
+    }
+        
+}
+#feature{
+    &
+    .border-top_feature_hr{
+        border-top: 1px solid #8fc0d8;
+    }
+    .featurette-heading{
+        margin-top: auto;
+    }
+    .feature_btn_color{
+        padding: 8px 50px;
+    }
+}
+
+
+.container-fluid{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+#blocks{margin-top: 10px;}
+//slider
+#slider{
+    
+    &
+    .slider-bg{
+        background: rgba(0, 0, 0, 0.59) url(http://185.105.224.2:7777/golovan.ru//inc/upload/backgrounds.jpg) repeat fixed center top / cover;
+        background-blend-mode: color;
+        
+    }
+    .ptb-200{
+        padding: 200px 0;
+    }
+}
+
+
+
+
+// product
+
+#product{
+
+    &
+    // nav-bar
+    .nav-bar{
+        margin-top: 0px;
+        margin-bottom: 50px;
+    }
+    button{
+        background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+        border: 0 none;
+        font-family: "Dosis",sans-serif;
+        font-weight: 600;
+        letter-spacing: 1px;
+        margin: 0 15px;
+        padding: 0;
+        position: relative;
+        text-transform: uppercase;
+    }
+    button:before{
+        background: #464646 none repeat scroll 0 0;
+        bottom: -8px;
+        content: "";
+        height: 2px;
+        position: absolute;
+        transform: scaleX(0);
+        transition: all 0.3s ease 0s;
+        width: 100%;
+    }
+    button:hover:before, button.active:before{
+        transform: scaleX(1);
+    }
+    button:focus{
+        outline: none;
+    }
+    // end nav bar
+    .product-style{
+
+        &
+        /* product-style */
+        .product-title {
+            left: 15px;
+            opacity: 0;
+            padding: 35px 0;
+            position: absolute;
+            right: 0;
+            text-align: center;
+            top: 50%;
+            transform: translateY(-50%);
+            transition: all 0.5s ease 0s;
+        }
+        .portfolio :hover .product-title{
+            opacity:1;
+        }
+        .hover-style > a::before {
+            display: none;
+        }
+        .product-title h3 {
+            color: #000;
+        }
+        .product-title span {
+            color: #000;
+        }
+
+        
+    }
+    .product img {
+        width: 100%;
+      }
+      .product {
+        margin-bottom: 30px;
+        position: relative;
+      }
+    .hover-style {
+        display: block;
+        position: relative;
+      }
+      .hover-style::before {
+        background: #fff none repeat scroll 0 0;
+        content: "";
+        height: 100%;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        transition: all 0.3s ease-in-out 0s;
+        width: 100%;
+      }
+      .hover-style:hover::before {
+        opacity: 0.95;
+      }
+      .product-title h3 {
+        font-size: 19px;
+        font-weight: 500;
+        transform: translateY(-10px);
+        transition: all 0.4s ease-in-out 0s;
+      }
+      .product-title span {
+        color: #424242;
+        display: inline-block;
+        font-size: 15px;
+        line-height: 16px;
+        transform: translateY(10px);
+        transition: all 0.4s ease-in-out 0s;
+      }
+      .product:hover .product-title{opacity:1}
+      .product:hover .product-title h3,.product:hover .product-title span {
+        transform: translateY(0px);
+      }
+      .no-gutte .portfolio,.no-gutte .grid-item {
+        margin: 0;
+        padding: 0;
+      }
+
+    
+
+}

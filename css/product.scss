@@ -1,0 +1,229 @@
+$main:#fff;
+#product_main{
+    margin: 30px 0;
+    &
+    #product_block{
+        margin: 15px 0;
+        padding: 0;
+        box-shadow: 0 5px 45px rgba(0, 0, 0, 0.15);
+        border-radius: 10px;
+        
+        background-blend-mode: color;
+        //background-size: auto;
+        transition: all 0.6s ease 0s;
+        &
+        .product_text{
+            position: relative;
+            bottom: 0;
+            margin-top: 150px;
+            padding: 10px 40px;
+            &
+                p{font-size: 0.8rem;}
+                h3{ font-size: 1.3rem;}
+        }
+        .bgr_item-text{
+            background: rgb(105, 105, 105);
+            border-radius: 0 0 10px 10px;
+            color: #fff;
+
+        }
+        .product_fill{
+            height: 100px;
+        }
+    }
+    //!!!!!DOSKA!!!!!
+    //size only 1000 x 667 slim-venge_xl.jpg
+    //p_block1
+    .bgr_item-1{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/lite-venge_xl.jpg) no-repeat center top / 100%;}
+    .bgr_item-1-2{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/lite-chocolad_xl.jpg) no-repeat center top / 100%;}
+    .bgr_item-1-3{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/lite-vilvet_xl.jpg) no-repeat center top / 100%;}
+    .bgr_item-1-4{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/lite-srez_xl.jpg) no-repeat center top / 100%;}
+    // .bgr_item-1-5{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/p_block1/terrasnaya_krem.jpg) no-repeat center top / 100%;}
+
+    //p_block2 standart-antracit_xl
+    .bgr_item-2{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/standart-vilvet_xl.jpg) no-repeat center top / 100%;}
+    .bgr_item-2-2{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/standart-chocolad_xl.jpg) no-repeat center top / 100%;}
+    .bgr_item-2-3{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/standart-antracit_xl.jpg) no-repeat center top / 100%;}
+    // .bgr_item-2-4{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/main_page/standart.jpeg) no-repeat center top / 100%;}
+    // .bgr_item-2-5{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/main_page/standart.jpeg) no-repeat center top / 100%;}
+
+    //p_block3
+    .bgr_item-3{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/slim-venge_xl.jpg) no-repeat center top / 100%;}
+    .bgr_item-3-2{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/slim-chocolad_xl.jpg) no-repeat center top / 100%;}
+    //p_block4
+    .bgr_item-4{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/balysina.jpg) no-repeat center top / 100%;}
+
+    //p_block5
+    .bgr_item-5{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/stolbik.jpg) no-repeat center top / 100%;}
+
+    //p_block6
+    .bgr_item-6{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/teak.jpg) no-repeat center top / 100%;}
+   
+    ///////// !!! R E S H E N I Y A !!! //////
+    //blok_1
+    .bgr_item-resheniya1{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/laga_xl.jpg) no-repeat center top / 100%;}
+    //block_2
+    .bgr_item-resheniya2{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/stolb_xl.jpg) no-repeat center top / 100%;}
+    //block_3
+    .bgr_item-resheniya3{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/perila-1_xl.jpg) no-repeat center top / 100%;}
+
+    ///////// !!! F U R N T U R A !!! ///////
+    .bgr_item-furnitura-1{background: rgba(0, 0, 0, 0.03) url(/inc/upload/product/td/klyaimer-1_xl.jpg) no-repeat center top / 100%;}
+
+    //popup
+    .popup {
+    background: #fff;
+    position: fixed;
+    display: none;
+    z-index: 5000;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+
+    >div {
+        border-radius: 10px;
+        position: fixed;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 15px 0px rgba(#000000, 0.3);
+        padding: 30px 15px;
+        width: 70%;
+        max-width: 600px;
+        z-index: 5001;
+        transform: (translate(-50%, -50%));
+        left: 50%;
+        top: 50%;
+        text-align: center;
+        border: 5px solid $main;
+        @media (max-width: 767px){
+            width: 100%;}
+        
+    }
+
+    & .close-popup {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+
+        & button {
+            border: 0;
+            background: none;
+            outline: 0;
+        }
+
+        i {
+            font-size: 1.6rem;
+        }
+
+        i:hover {
+            color: #982027;
+        }
+    }
+    form{
+        &
+        div{
+            margin: 15px 0;
+            &
+            label{
+                display: inline-block;
+                width: 150px;
+                vertical-align: top;
+            }
+            input, textarea{
+                display: inline-block;
+                border-radius: 0;
+                border: 1px solid rgba(0,0,0,.15);
+                outline: none;
+                font-size: 1.25em;
+                text-indent: 4px;
+                margin: 0 auto;
+        }
+            
+        }
+        
+        .fio, .email, .phone{
+            border-radius: 3px;
+            width: 70%;
+            margin-bottom: 10px;
+            @media (max-width: 767px){
+                width: 100%;
+            }
+            
+
+        }
+        .comment{
+            border-radius: 3px;
+            width: 70%;
+            height: 90px;
+            margin-bottom: 10px;
+            @media (max-width: 767px){
+                width: 100%;
+            }
+        }
+
+        .btn{
+            border-radius: 10px;
+            padding: 8px 40px;
+            background: none;
+            transition: all 0.1s ease 0s;
+        }
+            .btn:hover{ 
+                background: #982027;
+                color: #fff;
+            }
+        
+    }
+
+    .service-ul {
+        font-size: 1.4rem;
+    }
+}
+
+
+
+
+    //thumbnail mini-slider
+    .btn_thumb{
+
+        & 
+        .thumb{
+            padding: 0;
+            &
+            li{
+                display: inline-block;
+                padding: 4px;
+                
+                &
+                img{
+                    width: 40px;
+                    height: 40px;
+                }
+            }
+        }
+    }
+    
+
+
+
+    
+    // // .product_block:hover{
+    //         box-shadow: 0 25px 45px rgba(0, 0, 0, 0.15);
+    //         transform: translateY(-10px);
+    //     }
+    
+    .buy{
+        padding: 8px 40px;
+        background: #982027;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        transition: all 0.1s ease 0s;
+
+        &:focus{outline: none;}
+        &:active{box-shadow: inset 0px 0px 6px 2px #000;
+            
+        }
+
+       
+    }
+}
